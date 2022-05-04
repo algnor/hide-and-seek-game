@@ -11,7 +11,7 @@ dest_files=[ "res://.import/figure_animated.glb-f2ce8efed4e221b02bc7060a709cc135
 
 [params]
 
-nodes/root_type="Spatial"
+nodes/root_type="KinematicBody"
 nodes/root_name="Scene Root"
 nodes/root_scale=1.0
 nodes/custom_script=""
@@ -29,7 +29,7 @@ meshes/lightmap_texel_size=0.1
 skins/use_named_skins=true
 external_files/store_in_subdir=false
 animation/import=true
-animation/fps=15
+animation/fps=24.0
 animation/filter_script=""
 animation/storage=false
 animation/keep_custom_tracks=false

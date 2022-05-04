@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://models/ui-player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scene.tscn" type="PackedScene" id=2]
+[ext_resource path="res://ui.tscn" type="PackedScene" id=3]
+
+[node name="Spatial" type="Spatial"]
+
+[node name="figure_animated" parent="." instance=ExtResource( 1 )]
+transform = Transform( -0.436629, 0, -0.899642, 0, 1, 0, 0.899642, 0, -0.436629, -4.63914, 5.13511, 15.409 )
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 0.520265, 0.157359, -0.839382, 0, 0.982877, 0.18426, 0.854005, -0.095864, 0.511356, -7.26618, 6.59083, 15.4444 )
+
+[node name="Control" parent="Camera" instance=ExtResource( 3 )]
+
+[node name="scene" parent="." instance=ExtResource( 2 )]

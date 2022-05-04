@@ -84,6 +84,6 @@ func _physics_process(delta):
 	if crouching:  move_speed = -1
 	if sprinting: move_speed = 1
 	move_speed_smoothing = lerp(move_speed_smoothing, move_speed, 0.2)
-	_animation.set("parameters/move_speed/blend_amount", move_speed_smoothing)
+		_animation.set("parameters/move_speed/blend_amount", move_speed_smoothing)
 	#_animation.set("parameters/jump/active", is_jumping or (OS.get_ticks_msec() - time_at_jump < 208))
 	_animation.set("parameters/landed/active", just_landed or (OS.get_ticks_msec() - time_at_land < 333))
